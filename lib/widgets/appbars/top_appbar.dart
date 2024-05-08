@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sports_application/pages/settings/settings_page.dart';
 
 class TopAppBar extends StatelessWidget implements PreferredSizeWidget {
   const TopAppBar({
@@ -13,8 +14,11 @@ class TopAppBar extends StatelessWidget implements PreferredSizeWidget {
         IconButton(
           icon: const Icon(Icons.settings),
           onPressed: () {
-            // Handle settings button press
-          },
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SettingsPage()),
+            );
+          }
         ),
       ],
     );

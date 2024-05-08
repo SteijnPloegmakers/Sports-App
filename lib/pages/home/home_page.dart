@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             children: List.generate(10, (index) {
               return GestureDetector(
                 onTap: () {
-                  // Handle level selection
+                  // Something to happen when pressing on sports 'level'
                 },
                 child: Container(
                   width: 100.0,
