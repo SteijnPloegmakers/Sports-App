@@ -19,7 +19,7 @@ class SettingsPage extends StatelessWidget {
           ),
           SwitchListTile(
             title: Text('Dark Mode'),
-            value: true, // Replace with actual value
+            value: false, // Replace with actual value
             onChanged: (value) {
               // Handle dark mode toggle
             },
