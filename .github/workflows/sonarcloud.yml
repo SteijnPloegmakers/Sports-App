@@ -30,10 +30,9 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Run SonarCloud Scan
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          flutter build apk # Ensuring dependencies are fully built
-          sonar-scanner
 
