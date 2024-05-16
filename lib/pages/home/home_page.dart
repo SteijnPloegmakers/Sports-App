@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                   ),
                   child: Center(
                     child: Text(
-                      'Day ${index + 1}',
+                      'Excercise ${index + 1}',
                       style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
